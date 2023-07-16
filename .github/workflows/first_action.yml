@@ -5,7 +5,7 @@ jobs:   # more than one jobs will be there so need to write in next line
     runs-on: ubuntu-latest # can use other runner https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
     steps: 
         - name: print greeting # name of the step one
-          run: |
+          run: | # | is added for multi line commands execution
             echo "Hello World"
             echo "How are you"
         - name: print goodbye # name of step two
