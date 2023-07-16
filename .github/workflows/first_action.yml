@@ -1,0 +1,11 @@
+name: first work flow
+on: workflow_dispatch # one can manually triggers
+jobs:   # more than one jobs will be there so need to write in next line 
+  first_job:  # name of the job
+    runs-on: ubuntu-latest # can use other runner https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+    steps: 
+        - name: print greeting # name of the step one
+          run: echo "Hello World"
+        - name: print goodbye # name of step two
+          run: echo "goodbye"
+        
